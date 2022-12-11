@@ -1,5 +1,5 @@
 import React from 'react';
-import image from '../../../images/portfolio-trial-1.png'
+import image from '../../../resources/images/portfolio-trial-1.png'
 import Typewriter from 'typewriter-effect';
 
 const Hero = () => {

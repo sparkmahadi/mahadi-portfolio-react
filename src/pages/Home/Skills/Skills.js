@@ -1,5 +1,5 @@
 import React from 'react';
-import vercelIcon from '../../../images/vercel-icon-svgrepo-com.svg'
+import vercelIcon from '../../../resources/images/vercel-icon-svgrepo-com.svg'
 
 const Skills = () => {
     return (
