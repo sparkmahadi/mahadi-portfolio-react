@@ -1,13 +1,35 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ImLocation2 } from 'react-icons/im';
 import { MdAttachEmail } from 'react-icons/md';
 import { FaGithubSquare, FaLinkedin, FaGraduationCap, FaFacebookSquare } from 'react-icons/fa';
 import { BsPersonFill, BsFillTelephoneOutboundFill } from 'react-icons/bs';
+import emailjs from '@emailjs/browser';
+import Spinner from '../../components/Spinner/Spinner';
 
 const Contact = () => {
+    const [loading, setLoading] = useState(false);
+
+    const sendEmail = e => {
+        e.preventDefault();
+        setLoading(true);
+        emailjs.sendForm('service_hp85dol', 'template_9bmte6n', e.target, 'K3ZEwYKGKEsrn7WM8')
+            .then((result) => {
+                console.log(result.text);
+                setLoading(false);
+                e.target.reset();
+            }, (error) => {
+                setLoading(false);
+                console.log(error.text);
+            });
+    }
+
+    console.log(process.env.EMAILJS_serviceId);
     return (
-        <div className='px-10 xl:px-0 max-w-7xl mx-auto mb-20'>
-            <h2 className='uppercase md:text-2xl xl:text-3xl font-semibold text-center mb-5'>Contact Me</h2>
+        <div className='px-10 xl:px-0 max-w-7xl mx-auto mb-20 text-white'>
+            {
+                loading && <Spinner></Spinner>
+            }
+            <h2 className='uppercase md:text-2xl xl:text-3xl font-semibold text-center mb-10 divider'>Contact Me</h2>
             <div className='flex flex-col lg:flex-row gap-5'>
                 <div className="lg:w-1/3 bg-slate-700 p-5 rounded-lg text-xl">
                     <ul className=''>
@@ -52,7 +74,7 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className='lg:w-2/3'>
-                    <form action="">
+                    <form onSubmit={sendEmail} action="">
                         <ul className='grid grid-cols-2 gap-5 mb-5'>
                             <li>
                                 <input className='input input-bordered w-full' type="text" name="name" placeholder="Your Name" required />
@@ -64,11 +86,11 @@ const Contact = () => {
                                 <input className='input input-bordered w-full' type="text" name="subject" placeholder="Subject" required />
                             </li>
                             <li>
-                                <input className='input input-bordered w-full' type="text" name="phone" placeholder="Phone Number" required />
+                                <input className='input input-bordered w-full' type="number" name="phone" placeholder="Phone Number" required />
                             </li>
                         </ul>
                         <div className='mb-5'>
-                            <textarea className='textarea textarea-bordered w-full' placeholder="Your Message..." required></textarea>
+                            <textarea className='textarea textarea-bordered w-full' name='message' placeholder="Your Message..." required></textarea>
                         </div>
                         <button className='btn btn-sm btn-primary'>Submit</button>
                     </form>
