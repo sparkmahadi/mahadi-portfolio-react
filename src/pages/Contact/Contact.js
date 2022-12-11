@@ -12,7 +12,7 @@ const Contact = () => {
     const sendEmail = e => {
         e.preventDefault();
         setLoading(true);
-        emailjs.sendForm('service_hp85dol', 'template_9bmte6n', e.target, 'K3ZEwYKGKEsrn7WM8')
+        emailjs.sendForm(process.env.REACT_APP_emailjs_serviceId, process.env.REACT_APP_emailjs_templateId, e.target, process.env.REACT_APP_emailjs_public_key)
             .then((result) => {
                 console.log(result.text);
                 setLoading(false);
@@ -22,8 +22,6 @@ const Contact = () => {
                 console.log(error.text);
             });
     }
-
-    console.log(process.env.EMAILJS_serviceId);
     return (
         <div className='px-10 xl:px-0 max-w-7xl mx-auto mb-20 text-white'>
             {

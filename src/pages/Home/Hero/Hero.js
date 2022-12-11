@@ -1,6 +1,8 @@
 import React from 'react';
 import image from '../../../resources/images/portfolio-trial-1.png'
 import Typewriter from 'typewriter-effect';
+import './Hero.css'
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
     return (
@@ -24,7 +26,8 @@ const Hero = () => {
                         <p className="p-3 lg:px-0 xl:py-6 text-center lg:text-left xl:text-lg">A very hardworking and an optimistic person who always focus on being productive. Passionate to explore and learn new technologies, loves to stay up to date with industry trend.
                             A quick learner. Likes to perform with team, love to adopt positive attitude and cultures, try to maintain consistency to the solution of problems.
                         </p>
-                        <a href="https://drive.google.com/file/d/1dQBXQZz06DeZyrb6p2lyaXEl430lpVyM/view?usp=share_link" target="_blank" rel="noreferrer"><button className="btn btn-primary btn-sm mx-auto hidden lg:inline">Resume</button></a>
+
+                        <Link to='/resume'><button className="btn btn-primary btn-sm mx-auto hidden lg:inline">View Resume</button></Link>
                     </div>
                 </div>
             </div>

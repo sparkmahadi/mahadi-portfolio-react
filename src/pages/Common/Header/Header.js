@@ -2,6 +2,7 @@ import React from 'react';
 import { HiHome } from 'react-icons/hi';
 import { IoBookSharp } from 'react-icons/io5';
 import { AiTwotoneContacts, AiFillProject } from 'react-icons/ai';
+import { BsFillInfoCircleFill } from 'react-icons/bs';
 import { NavLink } from 'react-router-dom';
 
 const Header = () => {
@@ -19,6 +20,10 @@ const Header = () => {
                 <NavLink to='/blogs' className='flex flex-col justify-center items-center gap-1 hover:text-sky-300 scale-90 hover:scale-110 ease-in duration-200 cursor-pointer'>
                     <IoBookSharp className='w-6 h-6 md:w-8 md:h-8'/>
                     <h3>Blogs</h3>
+                </NavLink>
+                <NavLink to='/about' className='flex flex-col justify-center items-center gap-1 hover:text-sky-300 scale-90 hover:scale-110 ease-in duration-200 cursor-pointer'>
+                    <BsFillInfoCircleFill className='w-6 h-6 md:w-8 md:h-8'/>
+                    <h3>About Me</h3>
                 </NavLink>
                 <NavLink to='/Contact' className='flex flex-col justify-center items-center gap-1 hover:text-sky-300 scale-90 hover:scale-110 ease-in duration-200 cursor-pointer'>
                     <AiTwotoneContacts className='w-6 h-6 md:w-8 md:h-8'/>
