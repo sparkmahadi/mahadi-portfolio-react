@@ -27,9 +27,9 @@ const Contact = () => {
             {
                 loading && <Spinner></Spinner>
             }
-            <h2 className='uppercase md:text-2xl xl:text-3xl font-semibold text-center mb-10 divider'>Contact Me</h2>
+            <h2 data-aos="fade-down" className='uppercase md:text-2xl xl:text-3xl font-semibold text-center mb-10 divider'>Contact Me</h2>
             <div className='flex flex-col lg:flex-row gap-5'>
-                <div className="lg:w-1/3 bg-slate-700 p-5 rounded-lg md:text-xl">
+                <div data-aos="fade-right" className="lg:w-1/3 bg-slate-700 p-5 rounded-lg md:text-xl">
                     <ul className=''>
                         <li>
                             <div className="flex items-center gap-5 mb-3 text-white">
@@ -71,7 +71,7 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-                <div className='lg:w-2/3'>
+                <div data-aos="fade-left" className='lg:w-2/3'>
                     <form onSubmit={sendEmail} action="">
                         <ul className='grid grid-cols-2 gap-5 mb-5'>
                             <li>
