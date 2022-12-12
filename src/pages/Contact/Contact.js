@@ -27,7 +27,7 @@ const Contact = () => {
             {
                 loading && <Spinner></Spinner>
             }
-            <h2 data-aos="fade-down" className='uppercase md:text-2xl xl:text-3xl font-semibold text-center mb-10 divider'>Contact Me</h2>
+            <h2 data-aos="fade-down" className='uppercase text-lg md:text-2xl xl:text-3xl font-semibold text-center mb-5 lg:mb-10 divider'>Contact Me</h2>
             <div className='flex flex-col lg:flex-row gap-5'>
                 <div data-aos="fade-right" className="lg:w-1/3 bg-slate-700 p-5 rounded-lg md:text-xl">
                     <ul className=''>

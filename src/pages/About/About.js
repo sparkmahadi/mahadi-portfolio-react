@@ -3,13 +3,13 @@ import photo from '../../resources/images/image-2.jpg'
 
 const About = () => {
     return (
-        <div className='px-5 md:px-10 xl:px-0 max-w-7xl mx-auto mb-20 text-white'>
-            <h2 data-aos="fade-down" className='uppercase md:text-2xl xl:text-3xl font-semibold text-center mb-10 divider'>About Me</h2>
+        <div className='px-5 md:px-10 xl:px-0 max-w-7xl mx-auto mb-10 xl:mb-20 text-white'>
+            <h2 data-aos="fade-down" className='uppercase text-lg md:text-2xl xl:text-3xl font-semibold text-center xl:mb-10 divider'>About Me</h2>
             <div className="hero">
                 <div className="hero-content flex-col lg:flex-row gap-10 px-0">
                     <img data-aos="fade-right" src={photo} className="w-full lg:max-w-lg xl:max-w-xl rounded-lg shadow-2xl" alt='' />
-                    <div data-aos="fade-left" className='text-white lg:text-sm xl:text-base'>
-                        <h1 className="text-3xl xl:text-4xl font-bold">Hi, I am Md. Mahadi Hasan</h1>
+                    <div data-aos="fade-left" className='text-white text-sm xl:text-base'>
+                        <h1 className="text-2xl md:text-3xl xl:text-4xl font-bold">Hi, I am Md. Mahadi Hasan</h1>
                         <p className="py-2 xl:py-5">I am a passionate and dedicated full stack web developer.
                             Basically, I am a tech lover and I always had a soft corner for new tech stuffs.
                             Also, I am very hardworking and an optimistic person who always focus on being productive.

@@ -1,21 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import nextRep from '../../resources/images/NextRep.png';
 import enhance from '../../resources/images/enhance.png';
 import techsync from '../../resources/images/techsync.png';
 import { Link } from 'react-router-dom';
 
 const Projects = () => {
-    const [data, setData] = useState([]);
-    useEffect(()=>{
-        fetch('projects.json')
-        .then(res=>res.json())
-        .then(data => setData(data))
-    },[]);
-
-    console.log(data);
     return (
         <div className='px-5 md:px-10 xl:px-0 max-w-7xl mx-auto mb-5 text-white'>
-            <h2 data-aos="fade-down" className='uppercase md:text-2xl xl:text-3xl font-semibold text-center divider mb-10'>My Projects</h2>
+            <h2 data-aos="fade-down" className='uppercase text-xl md:text-2xl xl:text-3xl font-semibold text-center divider mb-5 xl:mb-10'>My Projects</h2>
 
             <div className='grid lg:grid-cols-3 gap-10'>
 
