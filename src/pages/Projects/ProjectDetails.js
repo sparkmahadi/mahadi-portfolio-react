@@ -48,16 +48,11 @@ const ProjectDetails = () => {
                         </div>
                     </div>
                     <div>
-                        <h5 className='text-xl text-center my-10 divider'>Tablet View</h5>
+                        <h5 className='text-xl text-center my-10 divider'>Tablet & Mobile View</h5>
                         <div className='grid lg:grid-cols-2 xl:grid-cols-3 gap-5'>
                             {
                                 tablet?.map((image, i) => <ImageCard image={image} key={i}></ImageCard>)
                             }
-                        </div>
-                    </div>
-                    <div>
-                        <h5 className='text-xl text-center my-10 divider'>Mobile View</h5>
-                        <div className='grid lg:grid-cols-2 xl:grid-cols-3 gap-5'>
                             {
                                 mobile?.map((image, i) => <ImageCard image={image} key={i}></ImageCard>)
                             }

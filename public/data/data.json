@@ -1,0 +1,167 @@
+[
+    {
+        "_id": {
+            "$oid": "6396971a6a2e4f2d2cb049de"
+        },
+        "name": "NextRep",
+        "features": [
+            "It is a full stack project on a second hand motorcycles selling and buying site.",
+            "On the landing page, there is a navbar, a banner, categories of different brands, advertised items, a featured section and finally a footer.",
+            "On the Navbar, Normally, there are three routes which redirects to different components. But after logging in or registration, one extra route for dashboard is opened.",
+            "For a buyer user, he/she can book and buy products from advertised items in homepage or after choosing the favourite brand. Buyers can do reporting items to admin and my orders tab is opened for them in dashboard. They can see the products ordered and can pay from there.",
+            "Seller users cannot order products. They can add product and manage their products from dashboard like advertising and deleting items.",
+            "Admin will see all sellers, all buyers and reported items on different route in dashboard. He/she can verify and delete sellers and buyers, take actions on reported items like rejecting report or accepting report and deleting products.",
+            "My profile tab on dashboard is open for all users.",
+            "User can choose his/her account type during registration. Logging with social media will create a buyer account by default.",
+            "Verifying JWT, Admin, Seller is implemented on backend.",
+            "Checking account type route and private route is introduced.",
+            "Spinners on different places during data loading is implemented.",
+            "There is a blog route which shows some articles relevant to the project."
+        ],
+        "technologies": [
+            "React",
+            "TailwindCSS",
+            "DaisyUI",
+            "React Router",
+            "Firebase",
+            "Stripe JS",
+            "MongoDB",
+            "Tenstack React Query",
+            "Axios",
+            "Express JS",
+            "React Hook Form",
+            "Date FNS",
+            "React Hot Toast",
+            "React Icons",
+            "React Helmet Async",
+            "Vercel",
+            "JSON Web Token"
+        ],
+        "links": [
+            "https://next-rep.web.app/",
+            "https://github.com/sparkmahadi/nextrep-client",
+            "https://github.com/sparkmahadi/nextrep-server"
+        ],
+        "images": {
+            "desktop": [
+                "https://i.ibb.co/GcvT7wR/Nextrep-admin-dashboard.jpg",
+                "https://i.ibb.co/s9Fw6KR/Nextrep-buyer-dashboard.jpg",
+                "https://i.ibb.co/BTT9DXS/Nextrep-homepage.jpg",
+                "https://i.ibb.co/fvk2WY3/Nextrep-seller-dasboard.jpg"
+            ],
+            "tablet": [
+                "https://i.ibb.co/hyZ1VVW/Nextrep-Tablet-View.jpg"
+            ],
+            "mobile": [
+                "https://i.ibb.co/f9rGp8Z/Nextrep-Mobile-View.png"
+            ]
+        },
+        "projectId": "1"
+    },
+    {
+        "_id": {
+            "$oid": "6396971a6a2e4f2d2cb049df"
+        },
+        "name": "Enhance",
+        "features": [
+            "The project is about an home interior designer's service details.",
+            "On the landing page, there is a navbar, a banner and some limited loaded data of services from database and a section about the service providing procedure and finally a footer.",
+            "On the nav, there is five routes (two of them is private) which redirects to different components.",
+            "On Services route, all the services provided are displayed in cards.",
+            "After click on the card buttons, dynamic routes are created and shows the service details with the reviews of that service. Users can add reviews if they are logged in otherwise not.",
+            "If user is logged in, then Add service and My Reviews route is showed on the navbar. User can add new services to the site and also manage the reviews given on different services by him/her.",
+            "Redirecting to expected route after log in is implemented.",
+            "Creating user, logging in and out, updating profile data is introduced in pages and navbar.",
+            "Logging with Google and Email is introduced.",
+            "Toggling theme, user profile picture is introduced on the navbar.",
+            "Blog route shows some articles relevant to the project."
+        ],
+        "technologies": [
+            "React",
+            "TailwindCSS",
+            "React Router",
+            "Firebase",
+            "React Toastify",
+            "React Icons",
+            "React-Photo-View",
+            "React Helmet Async",
+            "Vercel",
+            "MongoDB",
+            "JSON Web Token",
+            "Node JS",
+            "Express JS"
+        ],
+        "links": [
+            "https://enhance-d302c.web.app/",
+            "https://github.com/sparkmahadi/enhance-client",
+            "https://github.com/sparkmahadi/enhance-server"
+        ],
+        "images": {
+            "desktop": [
+                "https://i.ibb.co/br9d05H/enhance-admin-dashboard.jpg",
+                "https://i.ibb.co/yVXGnb0/enhance-buyer-dashboard.jpg",
+                "https://i.ibb.co/YpTn8Dy/enhance-homepage.jpg",
+                "https://i.ibb.co/KX4NTPP/enhance-services-page.png"
+            ],
+            "tablet": [
+                "https://i.ibb.co/FmZpdbV/enhance-tablet-view.jpg"
+            ],
+            "mobile": [
+                "https://i.ibb.co/JyW6FTT/enhance-mobile-view.jpg"
+            ]
+        },
+        "projectId": "2"
+    },
+    {
+        "_id": {
+            "$oid": "6396971a6a2e4f2d2cb049e0"
+        },
+        "name": "TechSync+",
+        "features": [
+            "The project is about an online education site which provides different courses on IT based topics.",
+            "On the landing page, there is a navbar, a header and a homepage with hero section and finally a footer.",
+            "On the nav, there is five routes which redirects to different components.",
+            "On Courses route, there is an aside and a main container. Courses can be filtered by selecting categories according to the level of hardness.",
+            "After click on the courses card buttons or names on aside, dynamic routes are created and shows the course details.",
+            "On details page, it shows the detailed content, a download button for pdf download and a button to go to checkout route which is a private route. If user is not logged in, then he/she cannot access the route and will be redirected to login page. After logging in, it will redirect to the expected route automatically. If there is no expected route before logging in, it will redirect to homepage.",
+            "Creating user, logging in and out, updating profile data is introduced in pages and navbar.",
+            "Logging with Google and Github is introduced.",
+            "Toggling theme, user profile picture is introduced on the navbar.",
+            "Blog and FAQ shows some articles relevant to the project."
+        ],
+        "technologies": [
+            "React",
+            "TailwindCSS",
+            "DaisyUI",
+            "React Router",
+            "Firebase",
+            "Toastify",
+            "React Icons",
+            "React to PDF",
+            "React Hook Form",
+            "AOS",
+            "Vercel"
+        ],
+        "links": [
+            "https://techsync-734c9.web.app/",
+            "https://github.com/sparkmahadi/techsync-client",
+            "https://github.com/sparkmahadi/techsync-server"
+        ],
+        "images": {
+            "desktop": [
+                "https://i.ibb.co/BtqBdK6/techsync-courses.jpg",
+                "https://i.ibb.co/K2hQrJQ/techsync-homepage.jpg",
+                "https://i.ibb.co/JRCTvpd/techsync-login.jpg",
+                "https://i.ibb.co/Wk8RD2N/techsync-course-details.jpg"
+            ],
+            "tablet": [
+                "https://i.ibb.co/9Y2wZf1/techsync-tablet-view.jpg",
+                "https://i.ibb.co/Ltg2pQX/techsync-themes.jpg"
+            ],
+            "mobile": [
+                "https://i.ibb.co/YdPbG8g/techsync-mobile-view.jpg"
+            ]
+        },
+        "projectId": "3"
+    }
+]
