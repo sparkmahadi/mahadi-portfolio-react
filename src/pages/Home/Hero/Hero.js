@@ -8,7 +8,7 @@ const Hero = () => {
     return (
         <div>
             <div className="hero my-5 xl:my-10 text-white lg:relative xl:py-10">
-                <div data-aos='fade-down' className="hero-content flex-col lg:flex-row-reverse justify-between border border-white rounded-lg p-0 mx-10">
+                <div data-aos='fade-down' className="hero-content flex-col lg:flex-row-reverse justify-between border border-white rounded-lg p-0 mx-5 md:mx-10">
                     <div className="lg:w-1/3">
                         <img data-aos="zoom-in" src={image} className="rounded-lg shadow-2xl bg-zinc-400" alt='' />
                     </div>

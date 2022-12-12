@@ -23,7 +23,7 @@ const Contact = () => {
             });
     }
     return (
-        <div className='px-10 xl:px-0 max-w-7xl mx-auto mb-20 text-white'>
+        <div className='px-5 md:px-10 xl:px-0 max-w-7xl mx-auto mb-20 text-white'>
             {
                 loading && <Spinner></Spinner>
             }

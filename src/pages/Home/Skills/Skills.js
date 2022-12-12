@@ -3,7 +3,7 @@ import vercelIcon from '../../../resources/images/vercel-icon-svgrepo-com.svg'
 
 const Skills = () => {
     return (
-        <div className='px-10 xl:px-0 max-w-7xl mx-auto mb-20 text-white'>
+        <div className='px-5 md:px-10 xl:px-0 max-w-7xl mx-auto mb-20 text-white'>
             <h2 data-aos="zoom-in-up" className='uppercase md:text-2xl xl:text-3xl font-semibold text-center divider'>Skills & Tools</h2>
             <div className='grid grid-cols-2 md:grid-cols-4 xl:grid-cols-5 gap-3 md:gap-5 lg:gap-7 mt-10'>
                 <div data-aos='fade-up' className='flex items-center gap-5 md:text-lg lg:text-xl font-semibold bg-gray-400 text-gray-700 p-1 lg:p-2 rounded-lg'>

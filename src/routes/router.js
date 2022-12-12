@@ -6,6 +6,7 @@ import Projects from "../pages/Projects/Projects";
 import Contact from './../pages/Contact/Contact';
 import Resume from './../pages/Resume/Resume';
 import About from './../pages/About/About';
+import ProjectDetails from "../pages/Projects/ProjectDetails";
 
 const router = createBrowserRouter([
     {
@@ -23,6 +24,11 @@ const router = createBrowserRouter([
             {
                 path: '/projects',
                 element: <Projects></Projects>
+            },
+            {
+                path: '/projects/:projectId',
+                element: <ProjectDetails></ProjectDetails>,
+                loader: ({params})=>fetch(`https://mahadi-portfolio-react-server.vercel.app/projects/${params.projectId}`)
             },
             {
                 path: '/blogs',
