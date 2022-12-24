@@ -10,7 +10,7 @@ function App() {
     Aos.refresh();
   },[])
   return (
-    <div>
+    <div className='relative'>
       <RouterProvider router={router}>
       </RouterProvider>
     </div>
