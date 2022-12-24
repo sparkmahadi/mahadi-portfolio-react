@@ -1,24 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { useLoaderData } from 'react-router-dom';
-import Spinner from '../../components/Spinner/Spinner';
 import ImageCard from './ImageCard';
 
 const ProjectDetails = () => {
-    const [loading, setLoading] = useState(true);
     const projectData = useLoaderData();
     const { name, features, links, technologies, images } = projectData;
     const { desktop, mobile, tablet } = images;
       
-    useEffect(() => {
-      const loadData = async () => {
-        await new Promise((r) => setTimeout(r, 1000));
-        setLoading(false);
-      };
-      loadData();
-    }, [])
-    if (loading) {
-        return <Spinner></Spinner>
-    }
     return (
         <div className='px-5 md:px-10 xl:px-0 max-w-7xl mx-auto mb-5 text-white'>
             <h2 data-aos="fade-down" className='uppercase text-lg md:text-2xl xl:text-3xl font-semibold text-center divider lg:mb-5'>Project Details</h2>
