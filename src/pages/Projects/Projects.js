@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import nextRep from '../../resources/images/NextRep.png';
 import enhance from '../../resources/images/enhance.png';
 import techsync from '../../resources/images/techsync.png';
+import DocPortal from "../../resources/images/Doctor's-Portal.png";
 import { Link } from 'react-router-dom';
 import Spinner from '../../components/Spinner/Spinner';
 
@@ -17,7 +18,7 @@ const Projects = () => {
             <div className='grid lg:grid-cols-3 gap-10'>
             
                 <Link onClick={()=>setLoading(true)} to='/projects/1' data-aos="zoom-in-up" className="card card-compact bg-base-100 shadow-xl">
-                    <figure><img src={nextRep} alt="Shoes" /></figure>
+                    <figure><img src={nextRep} alt="projects" /></figure>
                     <div className="card-body">
                         <h2 className="card-title">NextRep</h2>
                         <p>Second Hand Motorcycle Buying and Selling App</p>
@@ -25,7 +26,7 @@ const Projects = () => {
                 </Link>
 
                 <Link onClick={()=>setLoading(true)} to='/projects/2' data-aos="zoom-in-up" className="card card-compact bg-base-100 shadow-xl">
-                    <figure><img src={enhance} alt="Shoes" /></figure>
+                    <figure><img src={enhance} alt="projects" /></figure>
                     <div className="card-body">
                         <h2 className="card-title">Enhance</h2>
                         <p>Home Interior Designer's Service Providing App</p>
@@ -33,10 +34,18 @@ const Projects = () => {
                 </Link>
 
                 <Link onClick={()=>setLoading(true)} to='/projects/3' data-aos="zoom-in-up" className="card card-compact bg-base-100 shadow-xl">
-                    <figure><img src={techsync} alt="Shoes" /></figure>
+                    <figure><img src={techsync} alt="projects" /></figure>
                     <div className="card-body">
                         <h2 className="card-title">TechSync+</h2>
                         <p>E-learning Courses Providing App</p>
+                    </div>
+                </Link>
+
+                <Link onClick={()=>setLoading(true)} to='/projects/4' data-aos="zoom-in-up" className="card card-compact bg-base-100 shadow-xl">
+                    <figure><img src={DocPortal} alt="projects" /></figure>
+                    <div className="card-body">
+                        <h2 className="card-title">Doctor's Portal</h2>
+                        <p>Dentist Portal Management App</p>
                     </div>
                 </Link>
 
