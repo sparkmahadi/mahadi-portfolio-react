@@ -13,6 +13,8 @@ const MiniProjects = () => {
         "ReactJS",
         "Redux",
         "Debugging",
+        "NextJS",
+        "Typescript",
         "Basic JS, DOM & API",
         "HTML with CSS Frameworks",
         "Raw HTML & CSS Projects",

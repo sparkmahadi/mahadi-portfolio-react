@@ -28,6 +28,7 @@ import emajohnclone from '../../resources/images/miniprojects/emaJohn.png';
 import priceClub from '../../resources/images/miniprojects/priceClub.png';
 import tshirtMania from '../../resources/images/miniprojects/tshirtMania.png';
 import dailyMoon from '../../resources/images/miniprojects/dailyMoon.png';
+import moonTech from '../../resources/images/miniprojects/moonTech-react-redux.png';
 
 const MiniProjectDetails = ({ tabIndex }) => {
     const rawHTMLCSS = [
@@ -74,23 +75,29 @@ const MiniProjectDetails = ({ tabIndex }) => {
     ]
 
     const reactApps = [
-        { name: "Nitrix Fitness", codeRepo: "https://github.com/sparkmahadi/nitrix-fitness", live: "https://nitrix-fitness.netlify.app/", preview: nitrixFitness, details: "Learned Creating and Building Fresh React Apps" },
         { name: "Web Dev GK", codeRepo: "https://github.com/sparkmahadi/web-dev-gk", live: "https://web-dev-gk.netlify.app/", preview: webdevGK, details: "React App with different react packages, routing and animations" },
         { name: "Ema John Shopping", codeRepo: "https://github.com/sparkmahadi/ema-john-simple-with-auth-59", live: "https://emajohnclone.netlify.app/", preview: emajohnclone, details: "Clone of amazon with react, firebase and localstorage" },
+        { name: "Nitrix Fitness", codeRepo: "https://github.com/sparkmahadi/nitrix-fitness", live: "https://nitrix-fitness.netlify.app/", preview: nitrixFitness, details: "Learned Creating and Building Fresh React Apps" },
         { name: "Price Club", codeRepo: "https://github.com/sparkmahadi/price-club", live: "https://priceclub.netlify.app/", preview: priceClub, details: "React App with rechart, react router dom" },
         { name: "T-shirt Mania", codeRepo: "https://github.com/sparkmahadi/tshirt-mania", live: "https://tshirtmaniaapp.netlify.app/", preview: tshirtMania, details: "Fresh React App with state and props handling" },
     ]
     const reduxApps=[
         { name: "The Daily Moon", codeRepo: "https://github.com/sparkmahadi/dailyMoon-client", live: "https://daily-moon.netlify.app/", preview: dailyMoon, details: "Content Management App with Redux and MERN Stack" },
+        { name: "Moon Tech - React-Redux", codeRepo: "https://github.com/sparkmahadi/moonTech-react-redux", live: "https://moontech-react-redux.netlify.app/", preview: moonTech, details: "E-commerce app with react and old redux" },
+        { name: "Moon Tech - Redux Thunk", codeRepo: "https://github.com/sparkmahadi/moonTech-redux-thunk", live: "https://moontech-react-redux.netlify.app/", preview: moonTech, details: "E-commerce app with MERN stack and old redux with thunk" },
     ]
+    const nextApps = [];
+    const typescriptApps = [];
 
     let content;
     if(tabIndex===0){content=reactApps}
     if(tabIndex===1){content=reduxApps}
     if(tabIndex===2){content=debugging}
-    if(tabIndex===3){content=basicJS}
-    if(tabIndex===4){content=HTMLCSSFramework}
-    if(tabIndex===5){content=rawHTMLCSS}
+    if(tabIndex===3){content=nextApps}
+    if(tabIndex===4){content=typescriptApps}
+    if(tabIndex===5){content=basicJS}
+    if(tabIndex===6){content=HTMLCSSFramework}
+    if(tabIndex===7){content=rawHTMLCSS}
 
     return (
         <div className='px-5 md:px-10 xl:px-0 max-w-7xl mx-auto mb-5 text-white'>
@@ -120,6 +127,9 @@ const MiniProjectDetails = ({ tabIndex }) => {
                 }
 
             </div>
+            {
+                !content.length && <h3 className='text-center py-5 text-lg md:text-xl md:font-semibold md:py-10 lg:py-20 xl:py-40'>Coming Soon...</h3>
+            }
 
         </div>
     );
