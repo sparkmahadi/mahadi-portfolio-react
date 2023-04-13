@@ -84,7 +84,7 @@ const MiniProjectDetails = ({ tabIndex }) => {
     const reduxApps=[
         { name: "The Daily Moon", codeRepo: "https://github.com/sparkmahadi/dailyMoon-client", live: "https://daily-moon.netlify.app/", preview: dailyMoon, details: "Content Management App with Redux and MERN Stack" },
         { name: "Moon Tech - React-Redux", codeRepo: "https://github.com/sparkmahadi/moonTech-react-redux", live: "https://moontech-react-redux.netlify.app/", preview: moonTech, details: "E-commerce app with react and old redux" },
-        { name: "Moon Tech - Redux Thunk", codeRepo: "https://github.com/sparkmahadi/moonTech-redux-thunk", live: "https://moontech-react-redux.netlify.app/", preview: moonTech, details: "E-commerce app with MERN stack and old redux with thunk" },
+        { name: "Moon Tech - Redux Thunk", codeRepo: "https://github.com/sparkmahadi/moonTech-redux-thunk", live: "https://moontech-redux-thunk.netlify.app/", preview: moonTech, details: "E-commerce app with MERN stack and old redux with thunk" },
     ]
     const nextApps = [];
     const typescriptApps = [];

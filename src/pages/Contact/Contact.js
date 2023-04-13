@@ -65,9 +65,9 @@ const Contact = () => {
                     <div className='mt-5'>
                         <h3 className='divider text-white'>Social Links</h3>
                         <div className="flex justify-center items-center gap-5 text-blue-300">
-                            <FaLinkedin className='w-8 h-8' />
-                            <FaGithubSquare className='w-8 h-8' />
-                            <FaFacebookSquare className='w-8 h-8' />
+                            <a href="https://www.linkedin.com/in/hasan-mahadi/"><FaLinkedin className='w-8 h-8' /></a>
+                            <a href="https://github.com/sparkmahadi"><FaGithubSquare className='w-8 h-8' /></a>
+                            <a href="https://www.facebook.com/sparkmahadi"><FaFacebookSquare className='w-8 h-8' /></a>
                         </div>
                     </div>
                 </div>
