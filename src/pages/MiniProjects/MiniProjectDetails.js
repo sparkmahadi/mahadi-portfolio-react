@@ -96,9 +96,9 @@ const MiniProjectDetails = ({ tabIndex }) => {
 
     let content;
     if(tabIndex===0){content=reactApps}
-    if(tabIndex===1){content=reduxApps}
-    if(tabIndex===2){content=debugging}
-    if(tabIndex===3){content=nextApps}
+    if(tabIndex===1){content=nextApps}
+    if(tabIndex===2){content=reduxApps}
+    if(tabIndex===3){content=debugging}
     if(tabIndex===4){content=typescriptApps}
     if(tabIndex===5){content=basicJS}
     if(tabIndex===6){content=HTMLCSSFramework}
