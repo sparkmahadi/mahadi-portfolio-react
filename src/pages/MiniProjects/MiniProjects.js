@@ -11,9 +11,9 @@ const MiniProjects = () => {
 
     const tablist = [
         "ReactJS",
+        "NextJS",
         "Redux",
         "Debugging",
-        "NextJS",
         "Typescript",
         "Basic JS, DOM & API",
         "HTML with CSS Frameworks",
