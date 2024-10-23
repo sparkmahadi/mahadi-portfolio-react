@@ -29,6 +29,7 @@ import priceClub from '../../resources/images/miniprojects/priceClub.png';
 import tshirtMania from '../../resources/images/miniprojects/tshirtMania.png';
 import dailyMoon from '../../resources/images/miniprojects/dailyMoon.png';
 import moonTech from '../../resources/images/miniprojects/moonTech-react-redux.png';
+import pharmaSuite from '../../resources/images/miniprojects/pharmasuite-client-image.png';
 
 const MiniProjectDetails = ({ tabIndex }) => {
     const rawHTMLCSS = [
@@ -85,8 +86,12 @@ const MiniProjectDetails = ({ tabIndex }) => {
         { name: "The Daily Moon", codeRepo: "https://github.com/sparkmahadi/dailyMoon-client", live: "https://daily-moon.netlify.app/", preview: dailyMoon, details: "Content Management App with Redux and MERN Stack" },
         { name: "Moon Tech - React-Redux", codeRepo: "https://github.com/sparkmahadi/moonTech-react-redux", live: "https://moontech-react-redux.netlify.app/", preview: moonTech, details: "E-commerce app with react and old redux" },
         { name: "Moon Tech - Redux Thunk", codeRepo: "https://github.com/sparkmahadi/moonTech-redux-thunk", live: "https://moontech-redux-thunk.netlify.app/", preview: moonTech, details: "E-commerce app with MERN stack and old redux with thunk" },
+        { name: "Moon Tech - Redux Toolkit", codeRepo: "https://github.com/sparkmahadi/moonTech-toolkit", live: "https://moontech-redux-thunk.netlify.app/", preview: moonTech, details: "E-commerce app with MERN stack and old redux with thunk" },
     ]
-    const nextApps = [];
+
+    const nextApps = [
+        { name: "PharmaSuite", codeRepo: "https://github.com/sparkmahadi/pharmasuite-client", live: "https://pharmasuite-client.vercel.app/", preview: pharmaSuite, details: "Medicine and other healthcare products E-commerce app with professional features" },
+    ];
     const typescriptApps = [];
 
     let content;
@@ -101,7 +106,6 @@ const MiniProjectDetails = ({ tabIndex }) => {
 
     return (
         <div className='px-5 md:px-10 xl:px-0 max-w-7xl mx-auto mb-5 text-white'>
-
 
             <div className='grid lg:grid-cols-3 gap-10'>
 
