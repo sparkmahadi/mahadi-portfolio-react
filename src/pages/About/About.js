@@ -43,15 +43,15 @@ const About = () => {
                                 <li>
                                     <div className="xl:mb-3 text-white">
                                         <p>University:</p>
-                                        <p>Birth Year:</p>
+                                        <p>Age:</p>
                                         <p>Mobile:</p>
                                     </div>
                                 </li>
                                 <li>
                                     <div className="xl:mb-3 text-white">
                                         <p>Bangladesh University of Textiles</p>
-                                        <p>1998</p>
-                                        <p>+8801624-772632</p>
+                                        <p>27 Years</p>
+                                        <p>+8801832-774779</p>
                                     </div>
                                 </li>
                             </ul>

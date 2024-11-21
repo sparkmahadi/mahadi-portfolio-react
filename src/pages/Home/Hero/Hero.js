@@ -1,5 +1,5 @@
 import React from 'react';
-import image from '../../../resources/images/portfolio-trial-1.png'
+import image from '../../../resources/images/image-2.jpg'
 import Typewriter from 'typewriter-effect';
 import './Hero.css'
 import { Link } from 'react-router-dom';
@@ -8,12 +8,12 @@ const Hero = () => {
     return (
         <div>
             <div className="hero my-5 xl:my-10 text-white lg:relative xl:py-10">
-                <div data-aos='fade-down' className="hero-content flex-col lg:flex-row-reverse justify-between border border-white rounded-lg p-0 mx-5 md:mx-10">
+                <div data-aos='fade-down' className="hero-content flex-col lg:flex-row-reverse lg:gap-10 justify-between rounded-lg p-0 mx-5 md:mx-10">
                     <div className="lg:w-1/3">
                         <img data-aos="zoom-in" src={image} className="rounded-lg shadow-2xl bg-zinc-400" alt='' />
                     </div>
-                    <div data-aos="zoom-in-right" className="lg:w-1/2 lg:pl-10">
-                        <h1 className="text-3xl xl:text-5xl font-bold text-center lg:text-left mb-2">Md. Mahadi Hasan</h1>
+                    <div data-aos="zoom-in-right" className="lg:w-2/3">
+                        <h1 className="text-3xl xl:text-5xl font-bold text-center lg:text-left mb-2">Hello, I am Mahadi Hasan</h1>
                         <h6 className="text-xl xl:text-3xl font-bold text-center lg:text-left">
                             <Typewriter
                                 options={{

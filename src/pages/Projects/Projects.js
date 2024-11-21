@@ -9,7 +9,7 @@ import Spinner from '../../components/Spinner/Spinner';
 const Projects = () => {
     const [loading, setLoading] = useState(false);
     if(loading){
-        return <div className='custom-align'><Spinner></Spinner></div>
+        return <div><Spinner></Spinner></div>
     }
     return (
         <div className='px-5 md:px-10 xl:px-0 max-w-7xl mx-auto mb-5 text-white'>

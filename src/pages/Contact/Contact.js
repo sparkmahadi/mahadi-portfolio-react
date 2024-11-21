@@ -25,7 +25,7 @@ const Contact = () => {
     return (
         <div className='px-5 md:px-10 xl:px-0 max-w-7xl mx-auto mb-20 text-white'>
             {
-                loading && <div className='custom-align'><Spinner></Spinner></div>
+                loading && <div><Spinner></Spinner></div>
             }
             <h2 data-aos="fade-down" className='uppercase text-lg md:text-2xl xl:text-3xl font-semibold text-center mb-5 lg:mb-10 divider'>Contact Me</h2>
             <div className='flex flex-col lg:flex-row gap-5'>
@@ -58,7 +58,7 @@ const Contact = () => {
                         <li>
                             <div className="flex items-center gap-5 mb-3 text-white">
                                 <BsFillTelephoneOutboundFill className='w-6 h-6 text-blue-400' />
-                                <p>+8801624-772632</p>
+                                <p>+8801832-774779</p>
                             </div>
                         </li>
                     </ul>
